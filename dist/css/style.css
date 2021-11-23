@@ -16,14 +16,16 @@ html {
 
 body {
   background: #0d192b;
+  overflow-y: hidden;
   position: relative;
   color: #8bacda;
 }
 
 .card {
+  position: relative;
   display: block;
   margin: 140px auto;
-  width: 18%;
+  width: 23rem;
   height: 600px;
   padding: 25px;
   background: #14253d;
@@ -33,26 +35,61 @@ body {
 }
 
 .card .image {
+  position: relative;
+  height: 20rem;
   width: 100%;
   overflow: hidden;
-}
-
-.card .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 0.5rem;
 }
 
-.card .image img:hover {
-  color: #00fff7;
+.card .image img {
+  height: 20rem;
+  width: 100%;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #00fff7;
+}
+
+.card .overlay:hover {
+  opacity: 0.4;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   cursor: pointer;
+}
+
+.card .overlay #view-icon {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .card h2 {
   padding: 15px 0;
   color: white;
+}
+
+.card h2:hover {
+  color: #00fff7;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .card p {
@@ -112,5 +149,12 @@ body {
 
 .credit p span {
   color: white;
+}
+
+.credit p span:hover {
+  color: #00fff7;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
