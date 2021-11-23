@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 95%;
+  overflow-x: hidden;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #0d192b;
+  position: relative;
+  color: #8bacda;
+}
+
+.card {
+  display: block;
+  margin: 140px auto;
+  width: 18%;
+  height: 600px;
+  padding: 25px;
+  background: #14253d;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card .image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card .image img:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card h2 {
+  padding: 15px 0;
+  color: white;
+}
+
+.card p {
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+.info h3 {
+  color: #00fff7;
+}
+
+.info .icons {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+#line {
+  height: 0px;
+  border: none;
+  border-top: 1px solid #8bacda;
+  opacity: 0.2;
+}
+
+.credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-top: 15px;
+}
+
+.credit img {
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.credit p {
+  padding-left: 20px;
+}
+
+.credit p span {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
